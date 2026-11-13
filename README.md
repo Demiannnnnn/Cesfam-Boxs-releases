@@ -21,3 +21,16 @@ Todas las versiones, incluidas las de prueba, están en
 - Para actualizar, desinstala primero la versión anterior desde **Configuración → Aplicaciones**.
   Los datos del servidor se conservan.
 - Instalar el modo servidor pide permisos de administrador.
+
+## Quitar el servidor de un equipo
+
+Desinstalar la app desde Windows **no** quita el servidor: el servicio sigue funcionando y el
+equipo recuerda su modo. Para quitarlo, descarga
+[desinstalar.bat](https://github.com/Demiannnnnn/Cesfam-Boxs-releases/releases/latest/download/desinstalar.bat),
+haz clic derecho sobre el archivo y elige **Ejecutar como administrador**.
+
+- Detiene y elimina el servicio del servidor y sus reglas de firewall.
+- Borra el modo guardado: al abrir la app de nuevo vuelve a preguntar cómo usar el equipo.
+- **Conserva** la base de datos, los respaldos y los registros en `C:\ProgramData\GestionBox`.
+
+Atención: si ese equipo es el servidor en uso, los demás equipos se quedan sin servicio.
